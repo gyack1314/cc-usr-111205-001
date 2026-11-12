@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "village",
+      "waiting_capacity": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "junction",
+      "waiting_capacity": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "id": "shelter",
+      "waiting_capacity": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "roads": [
+    {
+      "id": "a",
+      "u": "village",
+      "v": "junction",
+      "duration": 1,
+      "open": [
+        [
+          0,
+          7
+        ]
+      ],
+      "capacity": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "id": "b",
+      "u": "junction",
+      "v": "shelter",
+      "duration": 2,
+      "open": [
+        [
+          0,
+          4
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "capacity": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "node": "village",
+      "time": 0,
+      "people": 6
+    }
+  ],
+  "shelters": [
+    {
+      "id": "s0",
+      "node": "shelter",
+      "total_capacity": 2,
+      "entry_capacity": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "deadlines": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "max_time_nodes": 5000
+}
